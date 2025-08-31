@@ -20,26 +20,26 @@ export default function PeoplePreview() {
     peopleData.slice(0, totalImages)
   );
 
-  // subtle shuffle: swap 1–2 images every 5s
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPreviewPeople((prev) => {
-        const newPreview = [...prev];
-        const swapCount = Math.floor(Math.random() * 2) + 1;
-        const swapIndices = getRandomIndices(totalImages, swapCount);
+  // // subtle shuffle: swap 1–2 images every 5s
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setPreviewPeople((prev) => {
+  //       const newPreview = [...prev];
+  //       const swapCount = Math.floor(Math.random() * 2) + 1;
+  //       const swapIndices = getRandomIndices(totalImages, swapCount);
 
-        swapIndices.forEach((idx) => {
-          const randomPerson =
-            peopleData[Math.floor(Math.random() * peopleData.length)];
-          newPreview[idx] = randomPerson;
-        });
+  //       swapIndices.forEach((idx) => {
+  //         const randomPerson =
+  //           peopleData[Math.floor(Math.random() * peopleData.length)];
+  //         newPreview[idx] = randomPerson;
+  //       });
 
-        return newPreview;
-      });
-    }, 5000);
+  //       return newPreview;
+  //     });
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   // staggered animation variants
   const container = {
