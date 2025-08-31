@@ -1,23 +1,31 @@
 export interface Organization {
+  id: number;
   nameEn: string;
-  nameNe: string;
-  description: string;
+  nameNp: string;
   image: string;
+  link?: string; // optional, can be used if different org pages exist
 }
 
-const organizationsData: Organization[] = [
+export const organizationsData: Organization[] = [
   {
-    nameEn: "Dura Students Society",
-    nameNe: "दुरा विद्यार्थी समाज",
-    description: "Organization for Dura students and youth.",
-    image: "/images/orgs/dss.jpg",
+    id: 1,
+    nameEn: "Dura Sewa Samaj",
+    nameNp: "दुरा सेवा समाज",
+    image: "/images/orgs/org1.jpeg",
+    link: "/organizations/dss",
   },
   {
-    nameEn: "Dura Cultural Center",
-    nameNe: "दुरा सांस्कृतिक केन्द्र",
-    description: "Promoting Dura culture and heritage.",
-    image: "/images/orgs/dcc.jpg",
+    id: 2,
+    nameEn: "Dura Mahila Samaj",
+    nameNp: "दुरा महिला समाज",
+    image: "/images/orgs/org2.jpg",
+    link: "/organizations/dms",
+  },
+  {
+    id: 3,
+    nameEn: "Dura Students Society",
+    nameNp: "दुरा विद्यार्थी समाज",
+    image: "/images/orgs/org3.jpg",
+    link: "/organizations/dss",
   },
 ];
-
-export default organizationsData;
