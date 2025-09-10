@@ -1,4 +1,4 @@
-# Dura Peto | दुरा पेटो | दुरा चौतारो
+# Dura Digital Heritage Project
 
 ## Sections
 
