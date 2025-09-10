@@ -10,3 +10,4 @@
 ## Tech Stack
 
 1. Frontend : Next.js, Tailwind
+2. CMS : Sanity.io
