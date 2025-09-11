@@ -1,5 +1,4 @@
-# Dura Digital Heritage Project
-
+# durapeto-web
 ## Sections
 
 1. Statistics
